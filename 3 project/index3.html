@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 3</title>
+</head>
+<body>
+ <style>
+body{
+  min-height: 97vh;
+  background-image: linear-gradient(#bdd5df, #74acc0, #5795bc);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+h1{
+  font-size: 40px;
+}
+button{
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(#a4aeef, #7384d9, #4551ce);
+  box-shadow: 0px 1px 22px 0px #a4aeef;
+  margin-top: 20px;
+}
+
+ </style>
+
+  <h1>Random Quote Generator</h1>
+  <p id="quote"></p>
+  <button onclick="generateQuote()">Generate Quote</button>
+
+  <script src="./script3.js"></script>
+</body>
+
+</html>

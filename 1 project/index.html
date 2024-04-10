@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1 projects JS</title>
+</head>
+<body>
+<style>
+h2{
+  font-size: 30px;
+  text-align: center;
+
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+li{
+  list-style: none;
+}
+
+button{
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 2px 1px 15px 3px rgb(177, 175, 175);
+}
+.green{
+  color: lightgreen;
+  background-color: darkgreen;
+}
+.green:hover{
+  color: darkgreen;
+  background-color:  lightgreen;
+  transition: all .5s;
+}
+.red{
+  color: rgb(255, 194, 194);
+  background-color: rgb(251, 35, 35);
+}
+.red:hover{
+  background-color: rgb(255, 0, 43);
+  color: rgb(110, 7, 7);
+  transition: all .5s;
+}
+.blue{
+  color: rgb(88, 206, 245);
+  background-color: blue;
+}
+.blue:hover{
+  background-color: rgb(89, 206, 245);
+  color: blue;
+  transition: all .5s;
+}
+.orange{
+  color: rgb(255, 196, 85);
+  background-color: orangered;
+}
+.orange:hover{
+  background-color: orange;
+  color: orangered;
+  transition: all .5s;
+}
+.random{
+  background-image: linear-gradient(to right, rgb(173, 29, 240), rgb(203, 67, 230), rgb(254, 150, 168));
+}
+</style>
+<h2>Color Flipper</h2>
+<ul>
+  <li>
+    <button class="green" onclick="setColor('green')">Green</button>
+  </li>
+  <li>
+    <button class="red" onclick="setColor('red')">Red</button>
+  </li>
+  <li>
+    <button class="blue" onclick="setColor('blue')">Blue</button>
+  </li>
+  <li>
+    <button class="orange" onclick="setColor('orange')">Orange</button>
+  </li>
+  <li>
+    <button class="random" onclick="randomColor()">Random</button>
+  </li>
+</ul>
+  <script src="./script.js"></script>
+</body>
+</html>
